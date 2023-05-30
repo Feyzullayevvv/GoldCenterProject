@@ -23,6 +23,8 @@ public class MainGUI extends JFrame {
     private JButton deleteButton;
     private JButton malEkleButton;
     private JButton satisButton;
+
+
     private JButton anbarButton;
     private JButton cixisButton;
 
@@ -33,6 +35,7 @@ public class MainGUI extends JFrame {
 
     public MainGUI() {
         ds = new DataSource();
+
         createUI();
         addEventListeners();
     }
@@ -41,7 +44,7 @@ public class MainGUI extends JFrame {
         mainPanel = new JPanel(new BorderLayout());
 
         buttonPanel = new JPanel();
-        buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
+        buttonPanel.setLayout(new GridLayout(9, 1));
 
         kassaButton = new JButton("KASSA");
         malEkleButton = new JButton("MAL ƏLAVƏ ETMƏK");
@@ -54,20 +57,22 @@ public class MainGUI extends JFrame {
 
 
 
-        buttonPanel.add(Box.createVerticalGlue());
+
+//        buttonPanel.add(Box.createVerticalGlue());
         buttonPanel.add(kassaButton);
-        buttonPanel.add(Box.createVerticalStrut(30));
+//        buttonPanel.add(Box.createVerticalStrut(60));
         buttonPanel.add(malEkleButton);
-        buttonPanel.add(Box.createVerticalStrut(30));
+//        buttonPanel.add(Box.createVerticalStrut(30));
         buttonPanel.add(deleteButton);
-        buttonPanel.add(Box.createVerticalStrut(30));
+//        buttonPanel.add(Box.createVerticalStrut(30));
         buttonPanel.add(satisButton);
-        buttonPanel.add(Box.createVerticalStrut(30));
+//        buttonPanel.add(Box.createVerticalStrut(30));
         buttonPanel.add(anbarButton);
-        buttonPanel.add(Box.createVerticalStrut(30));
+//        buttonPanel.add(Box.createVerticalStrut(30));
         buttonPanel.add(ayTotalButton);
-        buttonPanel.add(Box.createVerticalStrut(30));
+//        buttonPanel.add(Box.createVerticalStrut(30));
         buttonPanel.add(cixisButton);
+
         buttonPanel.add(Box.createVerticalGlue());
 
         outputPanel = new JPanel(new BorderLayout());
@@ -101,6 +106,7 @@ public class MainGUI extends JFrame {
                 showMalEkleMenu();
             }
         });
+
 
         ayTotalButton.addActionListener(new ActionListener() {
             @Override
@@ -136,6 +142,9 @@ public class MainGUI extends JFrame {
             }
         });
     }
+
+
+
 
     private void showKassaMenu() {
         String[] kassaOptions = { "Mədaxil", "Məxaric", "Günə görə hərəkəti izləmək", "Qalıq" };
