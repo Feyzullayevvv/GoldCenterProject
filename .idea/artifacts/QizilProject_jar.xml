@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="QizilProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/QizilProject_jar</output-path>
+    <root id="archive" name="QizilProject.jar">
+      <element id="module-output" name="QizilProject" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/swingx-all-1.6.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/sqlite-jdbc-3.42.0.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

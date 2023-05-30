@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="QizilProject1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/QizilProject.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
