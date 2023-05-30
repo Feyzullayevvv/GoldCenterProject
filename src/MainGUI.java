@@ -44,7 +44,7 @@ public class MainGUI extends JFrame {
         mainPanel = new JPanel(new BorderLayout());
 
         buttonPanel = new JPanel();
-        buttonPanel.setLayout(new GridLayout(9, 1));
+        buttonPanel.setLayout(new GridLayout(8,1));
 
         kassaButton = new JButton("KASSA");
         malEkleButton = new JButton("MAL ƏLAVƏ ETMƏK");
